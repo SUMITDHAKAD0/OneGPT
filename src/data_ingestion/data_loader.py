@@ -1,7 +1,8 @@
 from langchain_community.document_loaders import TextLoader
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.document_loaders import Docx2txtLoader
-
+from langchain_community.document_loaders.csv_loader import CSVLoader
+from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.text_splitter import TextSplitter, CharacterTextSplitter
 from src.logging import logger
@@ -10,7 +11,7 @@ import sys
 
 class Loader:
     def __init__(self):
-        self.path = "data/gst1.pdf"
+        self.path = "data/cost.csv"
 
     def pdfloader(self):
         if not self.path:
@@ -52,7 +53,21 @@ class Loader:
             logger.error(f"Error: File not found - {self.path}")
             print(e)
             sys.exit(1)
-        
+
+
+    def csvloader(self):
+        if not self.path:
+            raise ValueError("No file path provided.")
+        try:
+            logger.info(f"Loading {os.path.basename(self.path)} File")
+            csv_loader = CSVLoader(self.path)
+            csv_content = csv_loader.load()
+            return csv_content
+        except Exception as e:
+            logger.error(f"Error: File not found - {self.path}")
+            print(e)
+            sys.exit(1)
+
 
 if __name__ == "__main__":
     data = Loader().pdfloader()

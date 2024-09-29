@@ -1,0 +1,7 @@
+timestamp,currency,name,cost,organization_id,organization_name,cost_in_major,date
+1725235200.0,usd,Embedding models,8.69685,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,0.08696850,2024-09-02
+1725235200.0,usd,GPT-3.5 Turbo,1173.6399,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,11.73639900,2024-09-02
+1725321600.0,usd,Embedding models,26.10695,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,0.26106950,2024-09-03
+1725321600.0,usd,GPT-3.5 Turbo,3237.4868,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,32.37486800,2024-09-03
+1725408000.0,usd,Embedding models,2.77726,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,0.02777260,2024-09-04
+1725408000.0,usd,GPT-3.5 Turbo,344.32235,org-lFLRSnYTUbaYjeeHL5LSQ5eF,Personal,3.44322350,2024-09-04
