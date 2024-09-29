@@ -23,3 +23,7 @@ setup(
     install_requires=requirements,  # Read requirements from requirements.txt
     python_requires=">=3.10",  # Specify minimum Python version (optional)
 )
+
+
+# python setup.py sdist  # Creates a source distribution
+# python setup.py bdist_wheel  # Creates a wheel distribution
