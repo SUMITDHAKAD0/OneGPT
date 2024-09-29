@@ -10,7 +10,7 @@ import sys
 
 class Loader:
     def __init__(self):
-        self.path = "data/gst1.pdf"
+        self.path = "data/Employment_Form.Harish Krishna.docx"
 
     def pdfloader(self):
         if not self.path:
