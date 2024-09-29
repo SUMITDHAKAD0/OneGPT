@@ -4,7 +4,7 @@ from src.data_ingestion.data_loader import Loader
 # from src.logging.data_loader import Loader
 from src.logging import logger
 
-data = Loader().docloader()
+data = Loader().webloader()
 print(data)
 
 logger.info('All Good Buddy!!!')
