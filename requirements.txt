@@ -1,3 +1,4 @@
 langchain_community
 pypdf
 docx2txt
+bs4

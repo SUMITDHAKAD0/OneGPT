@@ -6,7 +6,6 @@ from langchain_community.document_loaders import WebBaseLoader
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.text_splitter import TextSplitter, CharacterTextSplitter
-from langchain_community.document_loaders import WebBaseLoader
 from src.logging import logger
 import os
 import sys
@@ -75,6 +74,8 @@ class Loader:
     def csvloader(self):
         if not self.path:
             raise ValueError("No file path provided.")
+        self._validate_file_format('txt')
+
         try:
             logger.info(f"Loading {os.path.basename(self.path)} File")
             csv_loader = CSVLoader(self.path)
