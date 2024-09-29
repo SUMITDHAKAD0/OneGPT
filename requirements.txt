@@ -1,7 +1,3 @@
 langchain_community
 pypdf
 docx2txt
-<<<<<<< HEAD
-=======
-bs4
->>>>>>> 598c81eff96330aa6708df06ec4edf232aaa5fad
