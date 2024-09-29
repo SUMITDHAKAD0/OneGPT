@@ -3,5 +3,6 @@ from src.logging import logger
 
 data = Loader().csvloader()
 print(data)
+print('sumit')
 
 logger.info('All Good Buddy!!!')
